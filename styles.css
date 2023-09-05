@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.head{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    margin-top: -2px;
+    z-index: 1000;
+}
+
+.container{
+   
+width: 100%;
+margin: o auto;
+border: 1px solid;
+box-shadow: 5px 4px 8px #888888;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 1px;
+    padding-top: 1rem;
+}
+.logo{
+    margin-left: 5px;
+    width: 60px;
+}
+.logo-container{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+
+}
+.logo-text{
+    font-size: 60px;
+}
+
+.nav-items{
+    display: flex;
+    gap: 2rem;
+    padding: 0 4em;
+ 
+}
+.nav-items div{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.nav-items div a{
+
+color:darkmagenta ;
+text-decoration: none;
+}
+
+.nav-items div:hover{
+    transition: 0.5s;
+    font-weight: bold;
+   
+    
+}
+.nav-items div a:hover{
+    color: black;
+}
+
+.project-card{
+    width:100%;
+    height:650px;
+    background-image: url(./images/rohan.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position:relative;
+    top: 90px;
+    left: 0px; 
+   box-shadow:0px 0px 40px #1f1f1f; 
+  }
+
+  .project-card::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #1f1f1f9a;
+    z-index:0;
+    /* transform: scaleX(1); */
+  }
+  .project-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:90px;
+    background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+    transform:scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s;
+    z-index:1;
+  }
+
+  .project-card:hover::before{
+    transform:scaleX(1);
+  }
+
+  .hero-section{
+    color: aliceblue;
+    font-weight: bold;
+    position: absolute;
+    top: 300px;
+    left: 0px; 
+    width: 100%;
+    height: 300px;
+    /* margin-top: -12px; */
+    z-index: 100;
+}
+
+
+
+  .project-section{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    position: relative;
+    /* top: 87px;
+    left: 0px; */
+  }
+
+  .home-section{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background-color: rgb(231,231,231);
+    position: relative;
+  }
+  
+  .body-section{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    position: relative;
+    /* top: 87px;
+    left: 0px; */
+  }
+footer{
+  position: relative;
+  margin-top: -1px;
+  background-color: #343d68;
+  padding: 5rem;
+  height: 150px;
+}
+
+.footer-wraper{
+  display: flex;
+  gap: 1rem;
+  padding: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.faded-text{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  color: #535c87;
+  user-select: none;
+  font-size: 5rem;
+}
+.posi{
+  position: absolute;
+  top: 20px;
+  display: flex;
+  gap: 20rem;
+}
+.nav-footer{
+  display: flex;
+  gap: 2rem;
+
+}
+.nav-footer div a{
+  color: aliceblue;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.nav-footer div a:hover{
+  color: orangered;
+  font-weight: bold;
+}
+.icons-link{
+  display: flex;
+  gap: 2rem;
+  color: aliceblue;
+ 
+
+}
+.icons-link a{
+  color: aliceblue;
+  text-decoration: none;
+}
+
+
+.icons-link a:hover{
+  cursor: pointer;
+  color: orangered;
+}
+
+.copyright{
+  position: absolute;
+  bottom: 0px;
+  left: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:aliceblue;
+
+}
